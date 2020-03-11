@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>login</title>
+    <!-- zui -->
+    <link href="css/zui.min.css" rel="stylesheet">
+       <!-- jQuery (ZUI中的Javascript组件依赖于jQuery) -->
+    <script src="js/jquery-1.7.min.js"></script>
+    <!-- ZUI Javascript组件 -->
+    <script src="js/zui.min.js"></script>
+    <style type="text/css">
+	.body{
+		width:100%;
+	}
+	.backIcon{
+        position:fixed;
+        top:1%;
+        left:1%;
+        width:10%;
+    }
+     .orderHeader{
+        width:100%;
+        margin-bottom:2%;
+        
+    }
+    .name{width:30%;
+        margin-left:41%;
+        margin-top:2%;
+    }
+    .headImg{
+    	width:100%;
+    	padding-left:40%;
+    	padding-top: 3%;
+    }
+    .text1{
+    	margin-top:5%;
+    	margin-left:12%;
+    }
+    .rating{
+    	width:100%;
+    	padding-left:10%;
+    }
+    .labels{
+    	background-color:#f0f0e5;
+    	margin-top: 5%;
+    	width:90%;
+    	margin-left:5%;
+    	border:2px solid gray;
+    	border-radius:20px;
+    }
+    .labelbtn{
+    	margin:2%;
+    	border-radius:10px;
+    }
+    .judgeText{
+    	margin:5%;
+    }
+    </style>
+     <link rel="stylesheet" href="css/pingfen.css">
+    <script src="js/jquery.js"></script>
+	</head>
+	<body>
+		<div class="body">
+		<div class="backIcon">
+                    <i class="icon icon-chevron-left icon-2x"></i>
+                </div>
+			
+			 <div class="orderHeader">
+                <div class="name"><font size="3">评价此单</font></div>
+            </div>
+           
+
+         <div class="headImg">
+         	<img src="imgs/timg.jpg" width="70px" height="70px" class="img-circle" alt="圆形图片">
+         </div>
+          <div class="text1">
+            	___________&nbsp;&nbsp;&nbsp;您对此单配送满意吗？&nbsp;&nbsp;&nbsp;___________
+            </div>
+
+            <div class="judgeBox">
+			<div class="labels">
+				<button data-toggle="button" class="btn labelbtn" type="button">&nbsp;准时&nbsp;</button>
+				<button data-toggle="button" class="btn labelbtn" type="button">服务周到</button>
+				<button data-toggle="button" class="btn labelbtn" type="button">态度友好</button>
+				<button data-toggle="button" class="btn labelbtn" type="button">不准时</button>
+				<button data-toggle="button" class="btn labelbtn " type="button">态度差</button>
+				<button data-toggle="button" class="btn labelbtn" type="button">送货上床</button>
+				<button data-toggle="button" class="btn labelbtn" type="button">秒送达</button>
+				<button data-toggle="button" class="btn labelbtn" type="button">信用可靠</button>
+			</div>
+			
+			<div class="judgeText has-success">
+			<textarea class="form-control" rows="3" placeholder="还有什么想说的写在这儿8">
+				
+			</textarea>
+			</div>
+
+            <div class="rating">
+            <div id="starRating">
+    <p class="photo">
+        <span><i class="high"></i><i class="nohigh"></i></span>
+        <span><i class="high"></i><i class="nohigh"></i></span>
+        <span><i class="high"></i><i class="nohigh"></i></span>
+        <span><i class="high"></i><i class="nohigh"></i></span>
+        <span><i class="high"></i><i class="nohigh"></i></span>
+    </p>
+    <p class="starNum">0.0分</p>
+    <div class="bottoms">
+        <a href="manage1-1.html" class="garyBtn cancleStar">取消评分</a><a href="manage1-1.html" class="blueBtn sureStar">确认</a>
+    </div>
+</div>
+	</div>
+
+
+
+            </div>
+		</div>
+
+<script>
+    $(function () {
+        //评分
+        var starRating = 0;
+        $('.photo span').on('mouseenter',function () {
+            var index = $(this).index()+1;
+            $(this).prevAll().find('.high').css('z-index',1)
+            $(this).find('.high').css('z-index',1)
+            $(this).nextAll().find('.high').css('z-index',0)
+            $('.starNum').html((index*2).toFixed(1)+'分')
+        })
+        $('.photo').on('mouseleave',function () {
+            $(this).find('.high').css('z-index',0)
+            var count = starRating / 2
+            if(count == 5) {
+                $('.photo span').find('.high').css('z-index',1);
+            } else {
+                $('.photo span').eq(count).prevAll().find('.high').css('z-index',1);
+            }
+            $('.starNum').html(starRating.toFixed(1)+'分')
+        })
+        $('.photo span').on('click',function () {
+            var index = $(this).index()+1;
+            $(this).prevAll().find('.high').css('z-index',1)
+            $(this).find('.high').css('z-index',1)
+            starRating = index*2;
+            $('.starNum').html(starRating.toFixed(1)+'分');
+           
+        })
+        //取消评分
+        $('.cancleStar').on('click',function () {
+            starRating = 0;
+            $('.photo span').find('.high').css('z-index',0);
+            $('.starNum').html(starRating.toFixed(1)+'分');
+        })
+        //确定评分
+       
+    })
+</script>					
+	</body>	
+
+	</html>

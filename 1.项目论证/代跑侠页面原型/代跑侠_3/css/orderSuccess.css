@@ -1,0 +1,54 @@
+.orderSuccess{
+    width:100%;
+    float: left;
+}
+.orderTop{
+    width: 100%;
+    float: left;
+    margin-top: 3%;
+    margin-left: 3%;
+    padding-bottom: 3%;
+    float: left;
+}
+h2{
+    display: inline;
+    margin-left: 33%;
+}
+.orderCenter{
+    width: 100%;
+    float: left;
+}
+.success{
+    width: 100%;
+    float: left;
+    margin-left: 30%;
+    padding-top: 5%;
+}
+h1{
+    display: inline;
+    color: #1a1a1a;
+    margin-left: 5%;
+}
+.button{
+    width: 100%;
+    float: left;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.keep{
+    float: left;
+    text-align: center;
+    margin-left: 23%;
+}
+.view{
+    float: left;
+    text-align: center;
+    margin-left: 15%;
+    padding-top: 2%;
+}
+.orderBottom{
+    width: 100%;
+    background-color: #e5e5e5;
+    height:100%;
+    float: left;
+}

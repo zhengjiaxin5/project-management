@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello world!</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/debit.css" rel="stylesheet">
+    <!-- zui -->
+    <link href="css/zui.css" rel="stylesheet">
+    <!-- ZUI 标准版压缩后的 CSS 文件 -->
+
+    <!-- ZUI Javascript 依赖 jQuery -->
+    <script src="js/jquery-1.7.min.js"></script>
+
+    <!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+    <script src="js/zui.js"></script>
+    <script src="js/iconfont.js"></script>
+    <script src="lib/datetimepicker/datetimepicker.js"></script>
+    <script type="text/javascript">
+    </script>
+  </head>
+  <body class="body">
+      <!-- title -->
+      <h2 class="title container-fluid">
+      	<span class="return"><i class="icon icon-chevron-left"></i> </span>
+		<div class="top-title">发布订单</div>
+      </h2>
+      <!-- 主要内容 -->
+      <div class="container-fluid address">
+      	<div class="input-control has-label-left">
+		  <input id="start" type="text" class="form-control" placeholder="快递在哪？">
+		  <label for="start" class="input-control-label-left text-left">起始地:</label>
+		  <label for="start" class="input-control-icon-right"><svg class="iconb weizhi" aria-hidden="true"><use xlink:href="#icon-weizhi-xianxing"></use></svg></label>
+		</div>
+		<div class="input-control has-label-left">
+		  <input id="dest" type="text" class="form-control" placeholder="要送到哪？">
+		  <label for="dest" class="input-control-label-left text-left">目的地:</label>
+		  <label for="dest" class="input-control-icon-right"><svg class="iconb weizhi" aria-hidden="true"><use xlink:href="#icon-weizhi-xianxing"></use></svg></label>
+		</div>
+	</div>
+	<div class="container-fluid information">
+		<div class="input-control has-label-left-lg  form-time information">
+		  <input class="form-control text-right" id="time"type="time" >
+		  <label for="time" class="input-control-label-left text-left">送达时间:</label>
+		</div>
+		<div class="input-control has-label-left information">
+		  <input id="fee" type="text" class="form-control text-right" placeholder="请输入佣金">
+		  <label for="fee" class="input-control-label-left text-left">佣金:</label>
+		</div>
+		<div class="input-control has-label-left information">
+			<li class="form-control" id="weight" > 
+				<label class="radio-inline">
+				  <input class="we" type="radio" name="radioOptionsExample" >＞5kg
+				</label>
+
+				<label class="radio-inline">
+				  <input class="we" type="radio" name="radioOptionsExample" >1-5kg
+				</label>
+				<label class="radio-inline">
+				  <input class="we" type="radio" name="radioOptionsExample" >＜1kg
+				</label>
+			</li>
+		  <label for="weight" class="input-control-label-left text-left">规格:</label>
+		</div>
+		<div class="input-control has-label-left information">
+		  <input id="remark" type="text" class="form-control text-right" placeholder="">
+		  <label for="remark" class="input-control-label-left text-left">备注:</label>
+		</div>
+	</div>	
+	<div class="pay container-fluid">
+		<button class="btn btn-block btn-primary" type="button">确认发布</button>
+	</div>
+
+      <!-- 下方导航 -->
+      <div class="menu">
+        <ul class="nav nav-primary">
+          <li class="">
+            <a href="index.html">
+              <svg class="iconb" aria-hidden="true"><use xlink:href="#icon-shouye-xianxing"></use> 
+              </svg> 
+              <div class="menu-text">
+              首页
+              </div>
+            </a>
+          </li>
+          <li class="">
+            <a href="#">
+              <svg class="iconb" aria-hidden="true"><use xlink:href="#icon-baoguofahuo-xianxing"></use> 
+              </svg> 
+              <div class="menu-text">
+                代取
+              </div>
+            </a>
+          </li>
+          <li class="active">
+            <a href="debit.html">
+              <svg class="iconb" aria-hidden="true"><use xlink:href="#icon-jijianfasong-xianxing"></use> 
+              </svg> 
+              <div class="menu-text">
+                发单
+              </div>
+            </a>
+          </li>
+          <li class="">
+            <a href="newmsg.html">
+              <svg class="iconb" aria-hidden="true"><use xlink:href="#icon-liaotianduihua-xianxing"></use> 
+              </svg> 
+              <div class="menu-text">
+                消息
+              </div>
+            </a>
+          </li>
+          <li class="">
+            <a href="#">
+              <svg class="iconb" aria-hidden="true"><use xlink:href="#icon-yonghu-xianxing"></use> 
+              </svg> 
+              <div class="menu-text">
+                我
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+  </body>
+</html>

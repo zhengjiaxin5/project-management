@@ -1,0 +1,171 @@
+.Wall{
+	width: 100%;
+	height: 180px;
+}
+.wall{
+	width: 100%;
+	height: 180px;
+}
+.back{
+	width: 20px;
+	height: 20px;
+	float: left;
+	position: absolute;
+	top: 15px;
+	left: 10px;
+}
+.photo{
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	position: absolute;
+	top: 135px;
+	left: 150px;
+}
+.content{
+	width: 100%;
+	height: 600px;
+
+}
+.name{
+	font-weight: 800;
+	font-size: 1.6em;
+	color: black;
+	position: relative;
+	left: 150px;
+	top: 65px;
+}
+.intro{
+	font-size: 1.1em;
+	font-weight: 600;
+	position: relative;
+	top: 90px;
+	left: 10px;
+}
+.intro_text{
+	display: block;
+	width: 200px;
+	height: 40px;
+	font-size: 1em;
+	font-weight: 400;
+	position: relative;
+	top: 68px;
+	left: 160px;
+	color: grey;
+}
+.location{
+	height: 13px;
+	width: 18px;
+	position: relative;
+	top: 55px;
+	left: 110px;
+	filter:alpha(Opacity=70);-moz-opacity:0.7;opacity: 0.7;
+}
+.address{
+	position: relative;
+	top: 57px;
+	left: 110px;
+}
+.sex{
+	height: 13px;
+	width: 13px;
+	position: relative;
+	top: 57px;
+	left: 150px;
+	filter:alpha(Opacity=70);-moz-opacity:0.7;opacity: 0.7;
+}
+.age{
+	position: relative;
+	top: 58px;
+	left: 150px;
+}
+.context_{
+	width: 250px;
+	height: 120px;
+	position: absolute;
+	top: 335px;
+	left: 100px;
+}
+.context_text{
+	width: 100%;
+	height: 30px;
+}
+.context_text h5{
+	display: inline;
+	color: #ccc;
+	font-size: 1.1em;
+	position: relative;
+	top: 5px;
+	left: 10px;
+}
+.context_text span{
+	font-size: 1.1em;
+	position: relative;
+	top: 5px;
+	left: 25px;
+}
+.order_top{
+	position: relative;
+	top: 130px;
+	width: 100%;
+	height: 30px;
+	border-radius: 15px;
+	background-color: #ccc;
+	text-align: center;
+	line-height: 30px;
+	font-size: 1.2em;
+	color: blue;
+	background:rgba(0,0,0,0.1);
+}
+.order_content{
+	width: 300px;
+	height: 80px;
+	margin: 0 auto;
+	position: relative;
+	top: 150px;
+
+}
+.order_contents{
+	width: 100px;
+	height: 80px;
+	background-color: #ccc;
+	background:rgba(0,0,0,0.05);
+	float: left;
+	border-radius: 15px;
+	border-color: #3399cc;
+	border-style: solid;
+	box-shadow: 3px 3px 20px grey;
+}
+.order_contents h5{
+	display: block;
+	text-align: center;
+	font-size: 1.6em;
+}
+.order_contents span{
+	text-align: center;
+	display: block;
+}
+.line{
+	width: 80%;
+	height: 4px;
+	margin: 0 auto;
+	background-color: #ccc;
+	border-radius: 10px;
+	position: relative;
+	top: 170px;
+
+}
+.edit{
+	width: 29px;
+	height: 25px;
+	position: absolute;
+	top: 185px;
+	right: 10px;
+}
+.chart{
+	width: 100%;
+	height: 250px;
+	/*background-color: red;*/
+	position: relative;
+	top: 150px;
+}

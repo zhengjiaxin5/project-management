@@ -1,0 +1,83 @@
+.orderDetails{
+    width:100%;
+    float: left;
+}
+.orderTop{
+    width: 100%;
+    float: left;
+    margin-top: 3%;
+    margin-left: 3%;
+    padding-bottom: 3%;
+    float: left;
+}
+h2{
+    display: inline;
+    margin-left: 33%;
+}
+.orderCenter{
+    width: 100%;
+    height: 65%;
+    background-color: #010101;
+    float: left;
+    padding-top: 50%;
+    padding-bottom: 50%;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+.orderBottom{
+    width: 100%;
+    float: left;
+}
+.expressLocation{
+    width: 100%;
+    float: left;
+    padding-left: 5%;
+    padding-top: 5%;
+
+}
+h3{
+    text-align: left;
+    font-weight: bolder;
+    display: inline;
+
+}
+.details{
+    text-align: center;
+    display: inline;
+}
+.deliveryLocation{
+    width: 100%;
+    float: left;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+.specificationAmount{
+    width: 100%;
+    float: left;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+.money{
+    display: inline;
+    font-weight: bolder;
+    font-size: 23px;
+    color: #478ddb;
+}
+.button{
+    width: 100%;
+    float: left;
+    margin-top: 3%;
+}
+.giveUp{
+    float: left;
+    text-align: center;
+    margin-left: 20%;
+}
+.immediatelyOrder{
+    float: left;
+    text-align: center;
+    margin-left: 15%;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>订单详情</title>
+    <!-- zui -->
+    <link href="css/zui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/orderDetails.css">
+</head>
+<body>
+<!-- 在此处编码你的创意 -->
+<div class="orderDetails">
+    <!--顶端提示和返回-->
+    <div class="orderTop">
+        <div>
+            <i class="icon icon-chevron-left"><h2>订单详情</h2></i>
+        </div>
+    </div>
+    <!--地图位置-->
+    <div class="orderCenter">
+        <!--<h1>这是地图</h1>-->
+        <div style="height: 100%; margin: 0">
+            <div id="container" style="height: 100%"></div>
+            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+            <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
+            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
+            <script type="text/javascript">
+                var dom = document.getElementById("container");
+                var myChart = echarts.init(dom);
+                var app = {};
+                option = null;
+                option = {
+                    backgroundColor: '#000',
+                    globe: {
+                        baseTexture: 'data-gl/asset/earth.jpg',
+                        heightTexture: 'data-gl/asset/bathymetry_bw_composite_4k.jpg',
+
+                        displacementScale: 0.1,
+
+                        shading: 'lambert',
+
+                        environment: 'data-gl/asset/starfield.jpg',
+
+                        light: {
+                            ambient: {
+                                intensity: 0.1
+                            },
+                            main: {
+                                intensity: 1.5
+                            }
+                        },
+
+                        layers: [{
+                            type: 'blend',
+                            blendTo: 'emission',
+                            texture: 'data-gl/asset/night.jpg'
+                        }, {
+                            type: 'overlay',
+                            texture: 'data-gl/asset/clouds.png',
+                            shading: 'lambert',
+                            distance: 5
+                        }]
+                    },
+                    series: []
+                };
+                if (option && typeof option === "object") {
+                    myChart.setOption(option, true);
+                }
+            </script>
+        </div>
+    </div>
+    <!--订单信息-->
+    <div class="orderBottom">
+        <div class="expressLocation">
+            <h3>快递位置：</h3><p class="details">西门菜鸟驿站中通快递</p>
+        </div>
+
+        <div class="deliveryLocation">
+            <h3>送达地点：</h3><p class="details">诚朴园3号楼</p>
+        </div>
+        <div class="specificationAmount">
+            <h3>规格：</h3><p class="details">中型快递（1-5KG）</p><h3>佣金：</h3><p class="money">3元</p>
+        </div>
+        <div class="button">
+            <div class="giveUp">
+                <!--<button class="btn" type="button" >放弃抢单</button>-->
+                <a href="orderCenter_orderList.html" class="button"><button class="btn" type="button" >放弃抢单</button></a>
+            </div>
+            <div class="immediatelyOrder">
+                <a href="orderCenter_orderSuccess.html" class="button"><button class="btn btn-primary" type="button">立即抢单</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- jQuery (ZUI中的Javascript组件依赖于jQuery) -->
+<!--<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
+<!-- ZUI Javascript组件 -->
+<script src="js/zui.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mywallet</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ZUI 标准版压缩后的 CSS 文件 -->
+    <link href="css/zui.min.css" rel="stylesheet">
+	<!-- ZUI Javascript 依赖 jQuery -->
+	<script src="js/jquery-1.7.min.js"></script>
+	<!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+	<script src="js/zui.min.js"></script>
+	<script src="js/zui.jedate.js"></script>
+	<!--****************自定义CSS**************-->
+	<link rel="stylesheet" href="css/pc_student.css">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="js/iconfont.js"></script>
+	<!--******************外部引用包************-->
+    <link href="lib/uploader/zui.uploader.min.css" rel="stylesheet">
+    <script src="lib/uploader/zui.uploader.min.js"></script>
+</head>
+<body>
+	<div class="banner">
+		<a href="pc_login.html"><img src="images/personalCenter/backblack.png" class="back"></a>
+		学生实人认证
+	</div>
+	<div class="card">
+		<span class="card01">我的学生证</span>
+		<img src="images/personalCenter/safe.png" class="safe">
+		<span class="card02">学生实人认证是保证的个人快递安全的第一道凭证</span>
+		<div class="card03">未认证</div>
+	</div>
+	<div class="massages">
+		<div class="massages01">
+			<span>上传学生证正高清照片以认证</span>
+		</div>
+		<div class="massages02">	
+            <div id='uploaderExample3' class="uploader" data-ride="uploader" data-url="your/file/upload/url">
+                <div class="uploader-message text-center">
+                    <div class="content"></div>
+                    <button type="button" class="close">×</button>
+                </div>
+                <div class="uploader-files file-list file-list-grid"></div>
+                <div>
+                    <hr class="divider">
+                    <div class="uploader-status pull-right text-muted"></div>
+                    <button type="button" class="btn btn-link uploader-btn-browse"><i class="icon icon-plus"></i> 选择正反证件照片</button> 
+                    <div class="space">
+                        <button type="button" class="btn btn-link uploader-btn-start"><i class="icon icon-cloud-upload"></i> 开始上传</button>
+                    </div>  
+                </div>
+            </div>
+		</div>
+
+		<div class="space">
+			<input type="checkbox" name="agree" value="1">我同意<a href="#">《安全协议》</a>	
+		</div>
+		
+	</div>
+
+
+
+</body>
+
+</html>

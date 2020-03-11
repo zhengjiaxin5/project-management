@@ -1,0 +1,45 @@
+.return{
+	float: left;
+}
+.top-title{
+	text-align:center;
+	margin: 0 auto;
+}
+.input-control{
+	width: 90%;
+	margin: auto;
+}
+.address input{
+	height: 4em;
+}
+.form-time{
+	width: 90%;
+	margin: auto;
+
+}
+.address{
+	margin-top: 5em;
+}
+.information{
+	margin-top:1em;
+}
+
+#time{
+	background-color: #fff;
+}
+.radio-inline{
+	float: right;
+	margin-right: 1em;
+}
+
+.we{
+	height: 100%;
+}
+.text-left{
+	color: #000;
+}
+.pay{
+	width: 90%;
+	margin:  auto;
+	padding-top:15em;
+}

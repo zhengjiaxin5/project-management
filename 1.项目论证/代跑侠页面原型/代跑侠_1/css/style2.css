@@ -1,0 +1,87 @@
+h2{
+	display: inline;
+	margin-left: 32%;
+	font-family: sans-serif;
+}
+
+a{
+	color: #505050;
+}
+.alert{
+	padding-top:  5%;
+	padding-bottom: 5%;
+}
+
+.loginDiv{
+	margin-top: 50%;
+}
+
+.spanDiv0{
+	position: absolute;
+	left: 26%;
+	top: 103%;
+}
+
+.spanDiv1{
+	position: absolute;
+	left: 15%;
+	top: 105%;
+}
+
+.span1{
+	position: absolute;
+	top:105%;
+	left: 7%;
+}
+
+.span2{
+	position: absolute;
+	top:105%;
+	left: 77%;
+}
+
+.register-span3{
+	position: absolute;
+	left: 33%;
+	top: 102%;
+}
+
+p{
+	padding: 0;
+	float: left;
+	padding-left: 20%;
+	height: 20%;
+	width: auto;
+}
+
+#registerButton{
+	position: absolute;
+	top: 23.5%;
+	width: 20%;
+	left: 76%;
+	z-index: 9999;
+}
+
+#retrieveButton{
+	position: absolute;
+	top: 29.5%;
+	width: 20%;
+	left: 76%;
+	z-index: 9999;
+}
+
+#phoneButton{
+	position: absolute;
+	top:39.5%;
+	width: 20%;
+	left: 76%;
+	z-index: 9999;
+}
+
+#emailButton{
+	position: absolute;
+	top:39.5%;
+	width: 20%;
+	left: 76%;
+	z-index: 9999;
+}

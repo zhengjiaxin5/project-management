@@ -1,0 +1,135 @@
+.banner{
+	width: 100%;
+	height: 40px;
+	background-color: #fff;
+	text-align: center;
+	line-height: 40px;
+	font-size: 1.3em;
+	font-weight: 600;
+	color: black;
+}
+.back{
+	width: 15px;
+	height: 15px;
+	float: left;
+	position: relative;
+	top: 12px;
+	left: 5px;
+}
+.banner span{
+	display: block;
+	color: black;
+	font-size: 0.8em;
+	position: absolute;
+	top: 2px;
+	right: 5px;
+
+}
+.Wall{
+	width: 100%;
+	height: 200px;
+}
+.Wall img{
+	width: 100%;
+	height: 200px;
+}
+.Wall span{
+	color: #fff;
+	font-size: 1.1em;
+	position: absolute;
+	top: 205px;
+	left: 130px;
+
+}
+.space{
+	width: 100%;
+	height: 30px;
+}
+.space span{
+	color: #ccc;
+	font-size: 1.05em;
+	position: relative;
+	top: 5px;
+	left: 15px;
+
+}
+.Photo{
+	width: 100%;
+	height: 60px;
+	border-style: solid;
+	border-width: 1.5px;
+	border-color: #ccc;
+	border-left-style: none;
+	border-right-style: none;
+}
+.Photo img{
+	width: 50px;
+	height: 50px;
+	border-radius: 100px;
+	position: relative;
+	left: 20px;
+	top: 5px;
+}
+.Photo span{
+	color: #ccc;
+	font-size: 1.1em;
+	position: relative;
+	left: 40px;
+	top: 10px;
+}
+.spaces{
+	width: 100%;
+	height: 15px;
+}
+.data{
+	width: 100%;
+	height: 40px;
+	border-top-style: solid;
+	border-top-color: #ccc;
+	border-width: 1.5px;
+}
+.data span{
+	color: #ccc;
+	font-size: 1.1em;
+	position: relative;
+	left: 25px;
+	top: 8px;
+}
+.name{
+	position: relative;
+	left: 30px;
+	top: 8px;
+	border-style: none;
+	color: black;
+	font-size: 1.1em;
+	font-weight: 600;
+}
+.data label{
+	position: relative;
+	font-size: 1.1em;
+	left: 30px;
+	top: 8px;
+}
+.data select{
+	border-style: none;
+	position: relative;
+	top: 8px;
+	left: 25px;
+}
+.dateselect{
+	width: 189.6px;
+	border-style: none;
+	font-size: 1.1em;
+	font-weight: 600;
+	position: relative;
+	left: 25px;
+	top: 5px;
+}
+.city{
+	font-size: 1.1em;
+	font-weight: 600;
+}
+.space3{
+	width: 100%;
+	height: 80px;
+}

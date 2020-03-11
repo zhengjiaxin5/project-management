@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="lib/datetimepicker/datetimepicker.min.css" rel="stylesheet">
+<script src="lib/datetimepicker/datetimepicker.min.js"></script>
+	<script type="text/javascript">
+		$(".form-date").datetimepicker(
+{
+    language:  "zh-CN",
+    weekStart: 1,
+    todayBtn:  1,
+    autoclose: 1,
+    todayHighlight: 1,
+    startView: 2,
+    minView: 2,
+    forceParse: 0,
+    format: "yyyy-mm-dd"
+});
+	</script>
+</head>
+<body>
+	<input id="timeranger1" class="dateinput mt8 dateicon" type="text" placeholder="YYYY-MM-DD" width="50px" readonly>
+</body>
+</html>

@@ -1,0 +1,42 @@
+.notLoggedIn{
+    width: 100%;
+    float: left;
+}
+.top{
+    width: 100%;
+    float: left;
+    padding-top: 40%;
+}
+h2{
+    text-align: center;
+
+}
+.logo{
+    width: 100%;
+    float: left;
+
+}
+img{
+    width: 33%;
+    margin-left: 34%;
+}
+.logIn{
+    width: 100%;
+    float: left;
+    padding-left: 38%;
+    padding-top: 5%;
+}
+.text1{
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 11px;
+    margin-top: 5%;
+}
+.text2{
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 11px;
+
+}

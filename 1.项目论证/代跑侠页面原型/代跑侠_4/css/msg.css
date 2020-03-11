@@ -1,0 +1,37 @@
+.title{
+	text-align:center;
+	margin: 1em auto;
+}
+.top-title{
+	color: #b5b5b5;
+	margin-left: 1em;
+	margin-right: 1em;
+
+}
+.this{
+	color: black;
+	border-bottom: solid 3px red;
+
+}
+.time{
+	float: right;
+	margin-top: 0.5em;
+	margin-right: 0.5em;
+	color: #b5b5b5;
+}
+.card{
+	margin-bottom: 0px;
+	
+	margin: 0 auto;
+}
+.card img{
+	float: left;
+
+}
+.head3{
+	margin-top: 0.5em;
+}
+
+a.menu:hover,a.menu:active{
+	color: blue;
+}
